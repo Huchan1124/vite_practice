@@ -1,12 +1,12 @@
 
 <template>
-  <componentA />
-
+  <!-- <componentA /> -->
+  <componentB />
 </template>
 
 <script setup>
  import componentA from "./components/componentA.vue"
-
+ import componentB from "./components/componentB.vue"
 </script>
 
 <style>
