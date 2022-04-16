@@ -1,6 +1,6 @@
 
 <template>
-  <!-- <componentA /> -->
+  <componentA />
   <componentB />
 </template>
 

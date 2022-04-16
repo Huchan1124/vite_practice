@@ -1,7 +1,7 @@
 <template>
 
-	<button @click="showView(1)">{{ title1 }}</button>
-	<button @click="showView(2)">{{ title2 }}</button>
+	<button @click="showView(1)">{{ title.oneBind }}</button>
+	<button @click="showView(2)">{{ title.twoBind }}</button>
 	<br>
 	<div class="container1" v-if="view === 1">
 		<h3>{{ title1 }}</h3>
@@ -19,10 +19,15 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import { ref , reactive } from 'vue';
 
-const title1 = '資料綁定:單向綁定';
-const title2 = '資料綁定:雙向綁定';
+const title = reactive({
+	oneBind:'資料綁定:單向綁定',
+	twoBind:'資料綁定:雙向綁定'
+
+})
+
+
 const text = ref('123');
 const view = ref(0);
 
